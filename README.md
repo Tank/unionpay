@@ -146,7 +146,7 @@ const unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl, true);
 
 ```
 
-#### 退款
+#### 验签
 
 后台通知验签，本例使用 [koa](https://koajs.com) 和 [koa-better-body](https://github.com/tunnckoCore/koa-better-body)
 
