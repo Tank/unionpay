@@ -1,5 +1,10 @@
 import { Unionpay } from '../src';
-import { debugapi_appTransReq, debugapi_backTransReq, debugapi_frontTransReq, debugapi_queryTransReq } from '../src/apis';
+import {
+  debugapi_appTransReq,
+  debugapi_backTransReq,
+  debugapi_frontTransReq,
+  debugapi_queryTransReq,
+} from '../src/apis';
 
 describe('Unionpay init debug', () => {
   const pfxPath = __dirname + '/cer/700000000000001_acp.pfx';
@@ -11,14 +16,7 @@ describe('Unionpay init debug', () => {
   let unionpay: Unionpay;
 
   beforeAll(async () => {
-    unionpay = new Unionpay(
-      pfxPath,
-      pfxPassword,
-      merId,
-      cer,
-      backUrl,
-      true
-    );
+    unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl, true);
 
     try {
       await unionpay.init();
@@ -60,7 +58,7 @@ describe('Unionpay init debug', () => {
       const resQuery = await unionpay.query({
         orderId,
         accessType: '0',
-      })
+      });
       expect(resQuery.respCode).toBe('00');
 
       await unionpay.refund({
@@ -84,7 +82,7 @@ describe('Unionpay init debug', () => {
         txnAmt: 1,
         frontUrl: '',
         frontFailUrl: '',
-      })
+      });
       expect(resFTR).toBeTruthy();
     } catch (e) {
       fail(e);
@@ -116,7 +114,8 @@ describe('Unionpay init debug', () => {
       txnTime: '20180619154537',
       txnType: '01',
       version: '5.0.0',
-      signature: 'N3jydGMUwEEaCTL1pX27pQElA+MSu+VidpohEWlotMtFcI9sJZmCTtCOX/ZVmoAbUxJ81uP9saIdU+IedFNIXp4v/+ESb3oO4vsSRNQiIUng/z8vbOScFfdFtwmO11LFMxKRS9En911ivzGL5b3oL9jb7qEAQAfwJP3jEqx1+qkwn+RIeM6tssI7tpcDkd2jDboncBZNyuMDfMOwgu4T33Z9DSBux+ZDldPS5ShyY9Nq2XwUMbeuIhU8lKZFtXN3PJbdYUJIKxofaIOLhPIbl2VzyaDgzc8ovIdD6XaPJOZfwoNBVAOntgfTy24gPyWsDs7lZ14Fpd9QzkWAEYnueQ=='
+      signature:
+        'N3jydGMUwEEaCTL1pX27pQElA+MSu+VidpohEWlotMtFcI9sJZmCTtCOX/ZVmoAbUxJ81uP9saIdU+IedFNIXp4v/+ESb3oO4vsSRNQiIUng/z8vbOScFfdFtwmO11LFMxKRS9En911ivzGL5b3oL9jb7qEAQAfwJP3jEqx1+qkwn+RIeM6tssI7tpcDkd2jDboncBZNyuMDfMOwgu4T33Z9DSBux+ZDldPS5ShyY9Nq2XwUMbeuIhU8lKZFtXN3PJbdYUJIKxofaIOLhPIbl2VzyaDgzc8ovIdD6XaPJOZfwoNBVAOntgfTy24gPyWsDs7lZ14Fpd9QzkWAEYnueQ==',
     };
 
     const verified = unionpay.verify(params);

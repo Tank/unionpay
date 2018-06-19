@@ -1,7 +1,6 @@
 import { pfx2pem } from '../src/utils';
 
 describe('pfx2pem', () => {
-
   it('should correct trans pfx to pem', async () => {
     const pfxPath = __dirname + '/cer/700000000000001_acp.pfx';
     const pfxPassword = '000000';

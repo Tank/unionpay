@@ -1,7 +1,9 @@
-export const api_appTransReq = 'https://gateway.95516.com/gateway/api/appTransReq.do';
+export const api_appTransReq =
+  'https://gateway.95516.com/gateway/api/appTransReq.do';
 export const debugapi_appTransReq =
   'https://gateway.test.95516.com/gateway/api/appTransReq.do';
-export const api_queryTransReq = 'https://gateway.95516.com/gateway/api/queryTrans.do';
+export const api_queryTransReq =
+  'https://gateway.95516.com/gateway/api/queryTrans.do';
 export const debugapi_queryTransReq =
   'https://gateway.test.95516.com/gateway/api/queryTrans.do';
 export const api_backTransReq =

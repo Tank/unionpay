@@ -6,9 +6,28 @@ import * as rp from 'request-promise';
 import { isArray } from 'util';
 
 import { h2d, pfx2pem } from './utils';
-import { IFrontTransReqParams, IAppTransReqParams, IQueryParams, IRefundParams } from './interfaces';
-import { debugapi_appTransReq, api_appTransReq, debugapi_queryTransReq, api_queryTransReq, debugapi_backTransReq, api_backTransReq, debugapi_frontTransReq, api_frontTransReq } from './apis';
-import { configFrontParams, configAppParams, configQueryParams, configRefundParams } from './configParams';
+import {
+  IFrontTransReqParams,
+  IAppTransReqParams,
+  IQueryParams,
+  IRefundParams,
+} from './interfaces';
+import {
+  debugapi_appTransReq,
+  api_appTransReq,
+  debugapi_queryTransReq,
+  api_queryTransReq,
+  debugapi_backTransReq,
+  api_backTransReq,
+  debugapi_frontTransReq,
+  api_frontTransReq,
+} from './apis';
+import {
+  configFrontParams,
+  configAppParams,
+  configQueryParams,
+  configRefundParams,
+} from './configParams';
 
 export class Unionpay {
   private privateKey: string = '';
@@ -56,7 +75,7 @@ export class Unionpay {
      * 是否为测试账号
      */
     private debug: boolean = false
-  ) { }
+  ) {}
 
   public get appTransReqApi() {
     return this.debug ? debugapi_appTransReq : api_appTransReq;
@@ -84,7 +103,7 @@ export class Unionpay {
    * import { Unionpay } from '@ycnt/unionpay';
    *
    * const unionpay = new Unionpay(...);
-   * 
+   *
    * (async () => {
    *   try {
    *     await unionpay.init();
@@ -110,12 +129,12 @@ export class Unionpay {
    * 3. 完成支付
    * 4. 结果发送至backUrl
    * 5. 前端点击跳转至 frontUrl（成功）或 frontFailUrl（失败）
-   * 
+   *
    * ```ts
    * import { Unionpay } from '@ycnt/unionpay';
    *
    * const unionpay = new Unionpay(...);
-   * 
+   *
    * (async () => {
    *   try {
    *     await unionpay.init();
@@ -153,7 +172,7 @@ export class Unionpay {
       params: reqParams,
     };
   }
-  
+
   /**
    * 手机控件支付
    * 1. 使用SDK获取参数tn
@@ -165,7 +184,7 @@ export class Unionpay {
    * import { Unionpay } from '@ycnt/unionpay';
    *
    * const unionpay = new Unionpay(...);
-   * 
+   *
    * (async () => {
    *   try {
    *     await unionpay.init();
@@ -205,7 +224,7 @@ export class Unionpay {
    * import { Unionpay } from '@ycnt/unionpay';
    *
    * const unionpay = new Unionpay(...);
-   * 
+   *
    * (async () => {
    *   try {
    *     await unionpay.init();
@@ -244,7 +263,7 @@ export class Unionpay {
    * import { Unionpay } from '@ycnt/unionpay';
    *
    * const unionpay = new Unionpay(...);
-   * 
+   *
    * (async () => {
    *   try {
    *     await unionpay.init();
@@ -285,7 +304,7 @@ export class Unionpay {
    * import { Unionpay } from '@ycnt/unionpay';
    *
    * const unionpay = new Unionpay(...);
-   * 
+   *
    * public webhook = async (ctx: IContext) => {
    *   try {
    *     await unionpay.init();
@@ -309,9 +328,14 @@ export class Unionpay {
     const obj = Object.assign({}, params);
     const signature = obj.signature;
     delete obj.signature;
-    const str = Object.keys(obj).sort().map(k => `${k}=${obj[k]}`).join('&');
+    const str = Object.keys(obj)
+      .sort()
+      .map(k => `${k}=${obj[k]}`)
+      .join('&');
     const buff = encode(str, 'utf-8');
-    const ss1 = createHash('sha1').update(buff).digest('hex');
+    const ss1 = createHash('sha1')
+      .update(buff)
+      .digest('hex');
 
     const verifier = createVerify('RSA-SHA1');
     verifier.update(ss1);
@@ -324,7 +348,9 @@ export class Unionpay {
       .map(k => `${k}=${params[k]}`)
       .join('&');
     const buff = encode(str, 'utf-8');
-    const ss1 = createHash('sha1').update(buff).digest('hex');
+    const ss1 = createHash('sha1')
+      .update(buff)
+      .digest('hex');
     params.signature = createSign('RSA-SHA1')
       .update(ss1)
       .sign(this.privateKey, 'base64');

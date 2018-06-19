@@ -1,5 +1,10 @@
 import { Unionpay } from '../src';
-import { api_appTransReq, api_backTransReq, api_frontTransReq, api_queryTransReq } from '../src/apis';
+import {
+  api_appTransReq,
+  api_backTransReq,
+  api_frontTransReq,
+  api_queryTransReq,
+} from '../src/apis';
 
 describe('Unionpay init prod', () => {
   const pfxPath = __dirname + '/cer/700000000000001_acp.pfx';
@@ -11,18 +16,11 @@ describe('Unionpay init prod', () => {
   let unionpay: Unionpay;
 
   beforeAll(async () => {
-    unionpay = new Unionpay(
-      pfxPath,
-      pfxPassword,
-      merId,
-      cer,
-      backUrl,
-      false,
-    );
+    unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl, false);
 
     try {
       await unionpay.init();
-    } catch(e) {
+    } catch (e) {
       fail(e);
     }
   });
@@ -37,8 +35,8 @@ describe('Unionpay init prod', () => {
       debug: false,
       certId: '40220995861346480087409489142384722381',
     });
-  });  
-  
+  });
+
   it('should get correct api', async () => {
     expect(unionpay.appTransReqApi).toBe(api_appTransReq);
     expect(unionpay.backTransApi).toBe(api_backTransReq);
@@ -57,15 +55,9 @@ describe('Unionpay init default', () => {
   let unionpay: Unionpay;
 
   beforeAll(async () => {
-    unionpay = new Unionpay(
-      pfxPath,
-      pfxPassword,
-      merId,
-      cer,
-      backUrl,
-    );
+    unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl);
   });
-  
+
   it('should use prod', async () => {
     expect(unionpay.appTransReqApi).toBe(api_appTransReq);
     expect(unionpay.backTransApi).toBe(api_backTransReq);

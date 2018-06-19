@@ -16,7 +16,7 @@ export function h2d(s) {
   }
 
   let dec = '0';
-  s.split('').forEach(function (chr) {
+  s.split('').forEach(function(chr) {
     let n = parseInt(chr, 16);
     for (let t = 8; t; t >>= 1) {
       dec = add(dec, dec);
