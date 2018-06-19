@@ -19,7 +19,6 @@
 ```bash
 npm i -S @ycnt/unionpay
 ```
-```
 或
 ```bash
 yarn add @ycnt/unionpay
