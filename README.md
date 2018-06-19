@@ -3,7 +3,7 @@
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 ## 介绍
-中国银联支付开放平台 Nodejs SDK
+中国银联支付开放平台 Nodejs SDK, 适用于API版本5.0.0
 
 > 申请测试地址：[https://open.unionpay.com/ajweb/index](https://open.unionpay.com/ajweb/index)
 
