@@ -8,7 +8,7 @@
 
 ▸ **h2d**(s: *`any`*): `string`
 
-*Defined in utils.ts:3*
+*Defined in [utils.ts:3](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/utils.ts#L3)*
 
 **Parameters:**
 
@@ -25,7 +25,7 @@ ___
 
 ▸ **pfx2pem**(path: *`string`*, password: *`string`*): `Promise`<`any`>
 
-*Defined in utils.ts:29*
+*Defined in [utils.ts:29](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/utils.ts#L29)*
 
 **Parameters:**
 

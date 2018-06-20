@@ -8,7 +8,7 @@
 
 **configAppParams**: *`object`*
 
-*Defined in configParams/configAppParams.ts:1*
+*Defined in [configParams/configAppParams.ts:1](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L1)*
 
 <a id="configappparams.accesstype"></a>
 
@@ -16,7 +16,7 @@
 
 **● accessType**: *`string`* = "0"
 
-*Defined in configParams/configAppParams.ts:9*
+*Defined in [configParams/configAppParams.ts:9](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L9)*
 
 ___
 <a id="configappparams.biztype"></a>
@@ -25,7 +25,7 @@ ___
 
 **● bizType**: *`string`* = "000201"
 
-*Defined in configParams/configAppParams.ts:4*
+*Defined in [configParams/configAppParams.ts:4](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L4)*
 
 ___
 <a id="configappparams.channeltype"></a>
@@ -34,7 +34,7 @@ ___
 
 **● channelType**: *`string`* = "08"
 
-*Defined in configParams/configAppParams.ts:8*
+*Defined in [configParams/configAppParams.ts:8](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L8)*
 
 ___
 <a id="configappparams.currencycode"></a>
@@ -43,7 +43,7 @@ ___
 
 **● currencyCode**: *`string`* = "156"
 
-*Defined in configParams/configAppParams.ts:10*
+*Defined in [configParams/configAppParams.ts:10](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L10)*
 
 ___
 <a id="configappparams.encoding"></a>
@@ -52,7 +52,7 @@ ___
 
 **● encoding**: *`string`* = "UTF-8"
 
-*Defined in configParams/configAppParams.ts:3*
+*Defined in [configParams/configAppParams.ts:3](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L3)*
 
 ___
 <a id="configappparams.signmethod"></a>
@@ -61,7 +61,7 @@ ___
 
 **● signMethod**: *`string`* = "01"
 
-*Defined in configParams/configAppParams.ts:5*
+*Defined in [configParams/configAppParams.ts:5](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L5)*
 
 ___
 <a id="configappparams.txnsubtype"></a>
@@ -70,7 +70,7 @@ ___
 
 **● txnSubType**: *`string`* = "01"
 
-*Defined in configParams/configAppParams.ts:7*
+*Defined in [configParams/configAppParams.ts:7](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L7)*
 
 ___
 <a id="configappparams.txntype"></a>
@@ -79,7 +79,7 @@ ___
 
 **● txnType**: *`string`* = "01"
 
-*Defined in configParams/configAppParams.ts:6*
+*Defined in [configParams/configAppParams.ts:6](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L6)*
 
 ___
 <a id="configappparams.version"></a>
@@ -88,7 +88,7 @@ ___
 
 **● version**: *`string`* = "5.0.0"
 
-*Defined in configParams/configAppParams.ts:2*
+*Defined in [configParams/configAppParams.ts:2](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configAppParams.ts#L2)*
 
 ___
 

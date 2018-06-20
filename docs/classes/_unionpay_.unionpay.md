@@ -12,7 +12,7 @@
 
 ⊕ **new Unionpay**(pfx: *`string`*, password: *`string`*, merId: *`string`*, cer: *`string`*, backUrl: *`string`*, debug?: *`boolean`*): [Unionpay](_unionpay_.unionpay.md)
 
-*Defined in Unionpay.ts:16*
+*Defined in [Unionpay.ts:35](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L35)*
 
 构造函数
 
@@ -51,7 +51,7 @@ ___
 
 **● backUrl**: *`string`*
 
-*Defined in Unionpay.ts:54*
+*Defined in [Unionpay.ts:73](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L73)*
 
 后台返回商户结果时使用，如上送，则发送商户后台交易结果通知，如需通过专线通知，需要在通知地址前面加上前缀：专线的首字母加竖线ZX|
 
@@ -62,7 +62,7 @@ ___
 
 **● cer**: *`string`*
 
-*Defined in Unionpay.ts:50*
+*Defined in [Unionpay.ts:69](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L69)*
 
 银联公钥证书Path cer格式
 
@@ -73,7 +73,7 @@ ___
 
 **● certId**: *`string`* = ""
 
-*Defined in Unionpay.ts:16*
+*Defined in [Unionpay.ts:35](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L35)*
 
 ___
 <a id="debug"></a>
@@ -82,7 +82,7 @@ ___
 
 **● debug**: *`boolean`*
 
-*Defined in Unionpay.ts:58*
+*Defined in [Unionpay.ts:77](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L77)*
 
 是否为测试账号
 
@@ -93,7 +93,7 @@ ___
 
 **● merId**: *`string`*
 
-*Defined in Unionpay.ts:46*
+*Defined in [Unionpay.ts:65](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L65)*
 
 商户代码
 
@@ -104,7 +104,7 @@ ___
 
 **● password**: *`string`*
 
-*Defined in Unionpay.ts:42*
+*Defined in [Unionpay.ts:61](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L61)*
 
 商户私钥证书密码
 
@@ -115,7 +115,7 @@ ___
 
 **● pfx**: *`string`*
 
-*Defined in Unionpay.ts:38*
+*Defined in [Unionpay.ts:57](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L57)*
 
 商户私钥证书Path pfx格式
 
@@ -126,7 +126,7 @@ ___
 
 **● privateKey**: *`string`* = ""
 
-*Defined in Unionpay.ts:14*
+*Defined in [Unionpay.ts:33](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L33)*
 
 ___
 <a id="publickey"></a>
@@ -135,7 +135,7 @@ ___
 
 **● publicKey**: *`string`* = ""
 
-*Defined in Unionpay.ts:15*
+*Defined in [Unionpay.ts:34](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L34)*
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 getappTransReqApi():  "https://gateway.95516.com/gateway/api/appTransReq.do" &#124; "https://gateway.test.95516.com/gateway/api/appTransReq.do"
 
-*Defined in Unionpay.ts:61*
+*Defined in [Unionpay.ts:80](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L80)*
 
 **Returns:**  "https://gateway.95516.com/gateway/api/appTransReq.do" &#124; "https://gateway.test.95516.com/gateway/api/appTransReq.do"
 
@@ -158,7 +158,7 @@ ___
 
 getbackTransApi():  "https://gateway.95516.com/gateway/api/backTransReq.do" &#124; "https://gateway.test.95516.com/gateway/api/backTransReq.do"
 
-*Defined in Unionpay.ts:69*
+*Defined in [Unionpay.ts:88](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L88)*
 
 **Returns:**  "https://gateway.95516.com/gateway/api/backTransReq.do" &#124; "https://gateway.test.95516.com/gateway/api/backTransReq.do"
 
@@ -169,7 +169,7 @@ ___
 
 getfrontTransApi():  "https://gateway.95516.com/gateway/api/frontTransReq.do" &#124; "https://gateway.test.95516.com/gateway/api/frontTransReq.do"
 
-*Defined in Unionpay.ts:73*
+*Defined in [Unionpay.ts:92](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L92)*
 
 **Returns:**  "https://gateway.95516.com/gateway/api/frontTransReq.do" &#124; "https://gateway.test.95516.com/gateway/api/frontTransReq.do"
 
@@ -180,7 +180,7 @@ ___
 
 getqueryTransApi():  "https://gateway.95516.com/gateway/api/queryTrans.do" &#124; "https://gateway.test.95516.com/gateway/api/queryTrans.do"
 
-*Defined in Unionpay.ts:65*
+*Defined in [Unionpay.ts:84](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L84)*
 
 **Returns:**  "https://gateway.95516.com/gateway/api/queryTrans.do" &#124; "https://gateway.test.95516.com/gateway/api/queryTrans.do"
 
@@ -194,7 +194,7 @@ ___
 
 ▸ **appTransReq**(params: *[IAppTransReqParams](../interfaces/_interfaces_iapptransreqparams_.iapptransreqparams.md)*): `Promise`<`any`>
 
-*Defined in Unionpay.ts:185*
+*Defined in [Unionpay.ts:211](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L211)*
 
 手机控件支付
 
@@ -236,11 +236,11 @@ ___
 
 ##  frontTransReq
 
-▸ **frontTransReq**(params: *[IFrontTransReqParams](../interfaces/_interfaces_ifronttransreqparams_.ifronttransreqparams.md)*): `object`
+▸ **frontTransReq**(params: *[IFrontTransReqParams](../interfaces/_interfaces_ifronttransreqparams_.ifronttransreqparams.md)*, b2b?: *`boolean`*): `object`
 
-*Defined in Unionpay.ts:138*
+*Defined in [Unionpay.ts:157](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L157)*
 
-网关支付
+网关支付，B2B支付
 
 1.  使用SDK获取参数api和params
 2.  在Web页中使用POST表单发送params至api
@@ -273,9 +273,10 @@ const unionpay = new Unionpay(...);
 
 **Parameters:**
 
-| Param | Type |
-| ------ | ------ |
-| params | [IFrontTransReqParams](../interfaces/_interfaces_ifronttransreqparams_.ifronttransreqparams.md) |
+| Param | Type | Default value |
+| ------ | ------ | ------ |
+| params | [IFrontTransReqParams](../interfaces/_interfaces_ifronttransreqparams_.ifronttransreqparams.md) | - |
+| `Default value` b2b | `boolean` | false |
 
 **Returns:** `object`
 
@@ -286,7 +287,7 @@ ___
 
 ▸ **init**(): `Promise`<`void`>
 
-*Defined in Unionpay.ts:98*
+*Defined in [Unionpay.ts:117](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L117)*
 
 初始化
 
@@ -317,7 +318,7 @@ ___
 
 ▸ **query**(params: *[IQueryParams](../interfaces/_interfaces_iqueryparams_.iqueryparams.md)*): `Promise`<`any`>
 
-*Defined in Unionpay.ts:224*
+*Defined in [Unionpay.ts:250](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L250)*
 
 订单查寻
 
@@ -355,7 +356,7 @@ ___
 
 ▸ **refund**(params: *[IRefundParams](../interfaces/_interfaces_irefundparams_.irefundparams.md)*): `Promise`<`any`>
 
-*Defined in Unionpay.ts:265*
+*Defined in [Unionpay.ts:291](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L291)*
 
 退款
 
@@ -395,7 +396,7 @@ ___
 
 ▸ **request**(api: *`string`*, params: *`any`*): `Promise`<`any`>
 
-*Defined in Unionpay.ts:333*
+*Defined in [Unionpay.ts:366](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L366)*
 
 **Parameters:**
 
@@ -413,7 +414,7 @@ ___
 
 ▸ **sign**(params: *`any`*): `void`
 
-*Defined in Unionpay.ts:321*
+*Defined in [Unionpay.ts:352](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L352)*
 
 **Parameters:**
 
@@ -430,7 +431,7 @@ ___
 
 ▸ **verify**(params: *`any`*): `boolean`
 
-*Defined in Unionpay.ts:308*
+*Defined in [Unionpay.ts:334](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/Unionpay.ts#L334)*
 
 后台通知验签，本例使用[koa](https://koajs.com)和[koa-better-body](https://github.com/tunnckoCore/koa-better-body)
 
