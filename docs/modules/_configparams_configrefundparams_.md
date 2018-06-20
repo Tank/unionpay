@@ -8,7 +8,7 @@
 
 **configRefundParams**: *`object`*
 
-*Defined in configParams/configRefundParams.ts:1*
+*Defined in [configParams/configRefundParams.ts:1](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L1)*
 
 <a id="configrefundparams.accesstype"></a>
 
@@ -16,7 +16,7 @@
 
 **● accessType**: *`string`* = "0"
 
-*Defined in configParams/configRefundParams.ts:9*
+*Defined in [configParams/configRefundParams.ts:9](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L9)*
 
 ___
 <a id="configrefundparams.biztype"></a>
@@ -25,7 +25,7 @@ ___
 
 **● bizType**: *`string`* = "000201"
 
-*Defined in configParams/configRefundParams.ts:4*
+*Defined in [configParams/configRefundParams.ts:4](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L4)*
 
 ___
 <a id="configrefundparams.channeltype"></a>
@@ -34,7 +34,7 @@ ___
 
 **● channelType**: *`string`* = "07"
 
-*Defined in configParams/configRefundParams.ts:8*
+*Defined in [configParams/configRefundParams.ts:8](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L8)*
 
 ___
 <a id="configrefundparams.currencycode"></a>
@@ -43,7 +43,7 @@ ___
 
 **● currencyCode**: *`string`* = "156"
 
-*Defined in configParams/configRefundParams.ts:10*
+*Defined in [configParams/configRefundParams.ts:10](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L10)*
 
 ___
 <a id="configrefundparams.encoding"></a>
@@ -52,7 +52,7 @@ ___
 
 **● encoding**: *`string`* = "UTF-8"
 
-*Defined in configParams/configRefundParams.ts:3*
+*Defined in [configParams/configRefundParams.ts:3](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L3)*
 
 ___
 <a id="configrefundparams.signmethod"></a>
@@ -61,7 +61,7 @@ ___
 
 **● signMethod**: *`string`* = "01"
 
-*Defined in configParams/configRefundParams.ts:5*
+*Defined in [configParams/configRefundParams.ts:5](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L5)*
 
 ___
 <a id="configrefundparams.txnsubtype"></a>
@@ -70,7 +70,7 @@ ___
 
 **● txnSubType**: *`string`* = "00"
 
-*Defined in configParams/configRefundParams.ts:7*
+*Defined in [configParams/configRefundParams.ts:7](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L7)*
 
 ___
 <a id="configrefundparams.txntype"></a>
@@ -79,7 +79,7 @@ ___
 
 **● txnType**: *`string`* = "31"
 
-*Defined in configParams/configRefundParams.ts:6*
+*Defined in [configParams/configRefundParams.ts:6](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L6)*
 
 ___
 <a id="configrefundparams.version"></a>
@@ -88,7 +88,7 @@ ___
 
 **● version**: *`string`* = "5.0.0"
 
-*Defined in configParams/configRefundParams.ts:2*
+*Defined in [configParams/configRefundParams.ts:2](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/configParams/configRefundParams.ts#L2)*
 
 ___
 
