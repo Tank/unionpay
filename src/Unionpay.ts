@@ -75,7 +75,7 @@ export class Unionpay {
      * 是否为测试账号
      */
     private debug: boolean = false
-  ) { }
+  ) {}
 
   public get appTransReqApi() {
     return this.debug ? debugapi_appTransReq : api_appTransReq;
@@ -155,11 +155,11 @@ export class Unionpay {
    * ```
    */
   public frontTransReq(
-    params: IFrontTransReqParams, 
+    params: IFrontTransReqParams,
     /**
      * 是否使用B2B支付
      */
-    b2b: boolean = false,
+    b2b: boolean = false
   ) {
     const txnTime = moment().format('YYYYMMDDHHmmss');
     const reqParams = Object.assign(

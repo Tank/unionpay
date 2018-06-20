@@ -4,7 +4,7 @@
 介绍
 --
 
-中国银联支付开放平台 Nodejs SDK
+中国银联支付开放平台 Nodejs SDK, 适用于API版本5.0.0
 
 > 申请测试地址：[https://open.unionpay.com/ajweb/index](https://open.unionpay.com/ajweb/index)
 
@@ -21,8 +21,9 @@
 ```bash
 npm i -S @ycnt/unionpay
 ```
-```
+
 或
+
 ```bash
 yarn add @ycnt/unionpay
 ```
@@ -58,7 +59,7 @@ const unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl, true);
 })();
 ```
 
-#### WEB下单
+#### 网关支付，B2B支付下单
 
 ```ts
 import { Unionpay } from '@ycnt/unionpay';
@@ -145,7 +146,7 @@ const unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl, true);
 })();
 ```
 
-#### 退款
+#### 验签
 
 后台通知验签，本例使用 [koa](https://koajs.com) 和 [koa-better-body](https://github.com/tunnckoCore/koa-better-body)
 

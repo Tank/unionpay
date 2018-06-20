@@ -13,7 +13,7 @@
 **● accNo**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:58*
+*Defined in [interfaces/IFrontTransReqParams.ts:58](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L58)*
 
 账号 1、 后台类消费交易时上送全卡号或卡号后4位 2、 跨行收单且收单机构收集银行卡信息时上送 3、前台类交易可通过配置后返回，卡号可选上送
 
@@ -25,7 +25,7 @@ ___
 **● accSplitData**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:78*
+*Defined in [interfaces/IFrontTransReqParams.ts:78](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L78)*
 
 分账域
 
@@ -37,7 +37,7 @@ ___
 **● accessType**: * `string` &#124; `number`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:10*
+*Defined in [interfaces/IFrontTransReqParams.ts:10](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L10)*
 
 接入类型 0：普通商户直连接入 2：平台类商户接入
 
@@ -49,7 +49,7 @@ ___
 **● ctrlRule**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:88*
+*Defined in [interfaces/IFrontTransReqParams.ts:88](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L88)*
 
 控制规则 32位01字符串控制位，从左至右第四位取值为1时表示需要强制分期处理
 
@@ -61,7 +61,7 @@ ___
 **● customerInfo**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:103*
+*Defined in [interfaces/IFrontTransReqParams.ts:103](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L103)*
 
 银行卡验证信息及身份信息
 
@@ -73,7 +73,7 @@ ___
 **● defaultPayType**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:93*
+*Defined in [interfaces/IFrontTransReqParams.ts:93](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L93)*
 
 默认支付方式 取值参考数据元说明
 
@@ -84,7 +84,7 @@ ___
 
 **● frontFailUrl**: *`string`*
 
-*Defined in interfaces/IFrontTransReqParams.ts:50*
+*Defined in [interfaces/IFrontTransReqParams.ts:50](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L50)*
 
 失败交易前台跳转地址
 
@@ -95,7 +95,7 @@ ___
 
 **● frontUrl**: *`string`*
 
-*Defined in interfaces/IFrontTransReqParams.ts:45*
+*Defined in [interfaces/IFrontTransReqParams.ts:45](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L45)*
 
 前台通知地址 前台返回商户结果时使用，前台类交易需上送
 
@@ -107,7 +107,7 @@ ___
 **● instalTransInfo**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:40*
+*Defined in [interfaces/IFrontTransReqParams.ts:40](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L40)*
 
 分期付款信息域
 
@@ -119,7 +119,7 @@ ___
 **● issInsNo**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:73*
+*Defined in [interfaces/IFrontTransReqParams.ts:73](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L73)*
 
 发卡机构代码
 
@@ -131,7 +131,7 @@ ___
 **● orderDesc**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:20*
+*Defined in [interfaces/IFrontTransReqParams.ts:20](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L20)*
 
 订单描述 移动支付上送
 
@@ -142,7 +142,7 @@ ___
 
 **● orderId**: *`string`*
 
-*Defined in interfaces/IFrontTransReqParams.ts:5*
+*Defined in [interfaces/IFrontTransReqParams.ts:5](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L5)*
 
 商户订单号，8-40位数字字母，不能含“-”或“_”，可以自行定制规则
 
@@ -154,7 +154,7 @@ ___
 **● payCardType**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:63*
+*Defined in [interfaces/IFrontTransReqParams.ts:63](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L63)*
 
 支付卡类型 特殊商户交易控制用（如借贷分离）
 
@@ -166,7 +166,7 @@ ___
 **● payTimeout**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:108*
+*Defined in [interfaces/IFrontTransReqParams.ts:108](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L108)*
 
 支付超时时间 订单支付超时时间
 
@@ -178,7 +178,7 @@ ___
 **● reqReserved**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:98*
+*Defined in [interfaces/IFrontTransReqParams.ts:98](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L98)*
 
 请求方保留域 商户自定义保留域，交易应答时会原样返回
 
@@ -190,7 +190,7 @@ ___
 **● reserved**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:68*
+*Defined in [interfaces/IFrontTransReqParams.ts:68](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L68)*
 
 保留域
 
@@ -202,7 +202,7 @@ ___
 **● riskRateInfo**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:83*
+*Defined in [interfaces/IFrontTransReqParams.ts:83](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L83)*
 
 风控信息域
 
@@ -214,7 +214,7 @@ ___
 **● subMerAbbr**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:30*
+*Defined in [interfaces/IFrontTransReqParams.ts:30](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L30)*
 
 二级商户简称 商户类型为平台类商户接入时必须上送
 
@@ -226,7 +226,7 @@ ___
 **● subMerId**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:25*
+*Defined in [interfaces/IFrontTransReqParams.ts:25](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L25)*
 
 二级商户代码 商户类型为平台类商户接入时必须上送
 
@@ -238,7 +238,7 @@ ___
 **● subMerName**: * `undefined` &#124; `string`
 *
 
-*Defined in interfaces/IFrontTransReqParams.ts:35*
+*Defined in [interfaces/IFrontTransReqParams.ts:35](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L35)*
 
 二级商户名称 商户类型为平台类商户接入时必须上送
 
@@ -249,7 +249,7 @@ ___
 
 **● txnAmt**: *`number`*
 
-*Defined in interfaces/IFrontTransReqParams.ts:15*
+*Defined in [interfaces/IFrontTransReqParams.ts:15](https://github.com/yc-node-typescript/unionpay/blob/343e74a/src/interfaces/IFrontTransReqParams.ts#L15)*
 
 交易金额 单位为分，不能带小数点
 
