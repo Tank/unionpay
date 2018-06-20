@@ -75,7 +75,7 @@ export class Unionpay {
      * 是否为测试账号
      */
     private debug: boolean = false
-  ) {}
+  ) { }
 
   public get appTransReqApi() {
     return this.debug ? debugapi_appTransReq : api_appTransReq;
@@ -123,7 +123,7 @@ export class Unionpay {
   }
 
   /**
-   * 网关支付
+   * 网关支付，B2B支付
    * 1. 使用SDK获取参数api和params
    * 2. 在Web页中使用POST表单发送params至api
    * 3. 完成支付
@@ -154,7 +154,13 @@ export class Unionpay {
    *
    * ```
    */
-  public frontTransReq(params: IFrontTransReqParams) {
+  public frontTransReq(
+    params: IFrontTransReqParams, 
+    /**
+     * 是否使用B2B支付
+     */
+    b2b: boolean = false,
+  ) {
     const txnTime = moment().format('YYYYMMDDHHmmss');
     const reqParams = Object.assign(
       {
@@ -166,6 +172,7 @@ export class Unionpay {
       params,
       configFrontParams
     );
+    if (b2b) reqParams.bizType = '000202';
     this.sign(reqParams);
     return {
       api: this.frontTransApi,

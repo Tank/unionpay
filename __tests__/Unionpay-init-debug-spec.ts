@@ -89,6 +89,22 @@ describe('Unionpay init debug', () => {
     }
   });
 
+  it('should request b2b correct', async () => {
+    try {
+      const orderId = 'UPDEBUG' + new Date().getTime();
+      const resFTR = unionpay.frontTransReq({
+        orderId,
+        accessType: '0',
+        txnAmt: 1,
+        frontUrl: '',
+        frontFailUrl: '',
+      }, true);
+      expect(resFTR).toBeTruthy();
+    } catch (e) {
+      fail(e);
+    }
+  });
+
   it('should verify correct', () => {
     const params = {
       accNo: '6216***********0018',

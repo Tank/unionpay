@@ -55,7 +55,7 @@ const unionpay = new Unionpay(pfxPath, pfxPassword, merId, cer, backUrl, true);
 
 ```
 
-#### WEB下单
+#### 网关支付，B2B支付下单
 
 ```ts
 import { Unionpay } from '@ycnt/unionpay';
